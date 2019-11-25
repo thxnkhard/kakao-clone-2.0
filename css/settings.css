@@ -1,0 +1,28 @@
+.settings .settings__sections {
+  border-top: 1px solid #f7f7f7;
+  padding: 25px 0px;
+  opacity: 0.9;
+}
+
+.settings__list .settings__setting {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.settings__list .settings__setting:last-child {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.settings__list .settings__icon {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.settings__sections .settings__setting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings__setting .setting__version {
+  opacity: 0.6;
+}

@@ -1,0 +1,6 @@
+.chats .chats__list :active,
+.friends .friends__header :active,
+.friends .friends__plus :active,
+.friends .friends__list :active {
+  background-color: rgb(233, 233, 233);
+}

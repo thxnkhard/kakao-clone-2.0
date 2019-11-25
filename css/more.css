@@ -1,0 +1,76 @@
+.more .more__btn-list {
+  margin-top: 40px;
+  display: flex;
+}
+
+.more .more__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 33px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.more .suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.more .more__btn-icon {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.more .more__btn-title {
+  font-size: 13px;
+}
+
+.more .more__suggestions-list {
+  margin-top: 20px;
+  display: flex;
+}
+
+.more .more__suggestions {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #f9f9f9;
+}
+
+.more .more__suggestions-title {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* .more .more__suggestions-list {
+  display: flex;
+}
+
+.more .suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  flex-direction: column;
+} */
+
+.more .suggestion__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #fae100;
+  width: 30px;
+  height: 30px;
+  border-radius: 15%;
+  font-size: 9px;
+}
+
+.more .suggestion__title {
+  font-size: 13px;
+  color: #7f7f7f;
+}
