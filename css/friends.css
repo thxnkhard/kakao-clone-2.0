@@ -33,3 +33,22 @@ li.chats__chat {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.chat__column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend__column .chat__badge {
+  background-color: #e36041;
+  color: #fcfcfc;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: -10px;
+}

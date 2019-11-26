@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -26,7 +26,7 @@
         <i class="fas fa-battery-quarter"></i>
       </div>
     </div>
-    <header class="header">
+    <header class="header chat__header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-btn">
           <i class="fas fa-arrow-left fa"></i>
@@ -44,52 +44,57 @@
     </header>
     <main class="chat">
       <ul class="chat__messages">
-        <span class="chat__timestamp">Friday, November 22, 2019</span>
-        <li class="incoming-message message">
-          <img
-            src="images/avatar-nico.jpg"
-            class="friend__avatar message__avatar"
-          />
-          <div class="message__content">
-            <span class="message__author">
-              Nico
+        <span class="chat__timestamp">
+          Friday, November 22, 2019
+        </span>
+        <div class="chat__messages_main">
+          <li class="incoming-message message">
+            <img
+              src="images/avatar-nico.jpg"
+              class="friend__avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">
+                Nico
+              </span>
+              <span class="message__bubble">
+                Hello, Welcome to<br />
+                NomadCoders!
+              </span>
+            </div>
+            <span class="message__timestamp">
+              13:53
             </span>
-            <span class="message__bubble">
-              Hello, Welcome to NomadCoders!
+          </li>
+          <li class="outcoming-message message">
+            <span class="message__timestamp">
+              13:53
             </span>
-          </div>
-          <span class="message__timestamp">
-            13:53
-          </span>
-        </li>
-        <li class="outcoming-message message">
-          <span class="message__timestamp">
-            13:55
-          </span>
-          <div class="message__content">
-            <span class="message__bubble">
-              Thank you, Nico<br />
-              I'll do my best!
+            <div class="message__content">
+              <span class="message__bubble">
+                Thank you, Nico<br />
+                I'll do my best!
+              </span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="images/avatar-nico.jpg"
+              class="friend__avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">
+                Nico
+              </span>
+              <span class="message__bubble">
+                Good Job!
+              </span>
+            </div>
+            <span class="message__timestamp">
+              13:53
             </span>
-          </div>
-        </li>
-        <li class="incoming-message message">
-          <img
-            src="images/avatar-nico.jpg"
-            class="friend__avatar message__avatar"
-          />
-          <div class="message__content">
-            <span class="message__author">
-              Nico
-            </span>
-            <span class="message__bubble">
-              Good Job!
-            </span>
-          </div>
-          <span class="message__timestamp">
-            13:53
-          </span>
-        </li>
+          </li>
+        </div>
       </ul>
     </main>
     <div class="chat__write">
