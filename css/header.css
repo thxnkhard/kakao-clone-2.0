@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  top: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +19,10 @@
   font-size: 20px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.header .fa-cog {
+  margin-right: 37px;
 }
 
 .header .header__header-column {
