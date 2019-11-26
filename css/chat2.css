@@ -60,6 +60,10 @@
   margin: 10px;
 }
 
+.message__content .message__author {
+  font-weight: 600;
+}
+
 .incoming-message .message__bubble {
   margin-top: 8px;
   padding: 8px 10px;
