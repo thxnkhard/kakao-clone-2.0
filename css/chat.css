@@ -78,7 +78,9 @@
   color: #696969;
   flex-basis: 100%;
   font-weight: 600;
+  font-size: 13px;
 }
+
 .chat__messages .chat__timestamp::before,
 .chat__messages .chat__timestamp::after {
   content: "";
@@ -93,7 +95,7 @@
 .chat__write {
   position: fixed;
   bottom: 50px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -109,14 +111,15 @@
 
 .chat__write i {
   font-size: 22px;
+  cursor: pointer;
 }
 
 .chat__write-column:nth-child(2) {
-  width: 80%;
+  width: 70%;
 }
 
 .chat__write-column input {
-  padding: 20px 10px;
+  padding: 15px 10px;
   width: 100%;
   border: none;
   font-size: 14px;
@@ -127,5 +130,5 @@
 }
 
 .chat__write-icon .fa-smile {
-  padding-right: 10px;
+  padding-right: 7px;
 }
