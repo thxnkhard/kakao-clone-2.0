@@ -1,3 +1,8 @@
+.incoming-message:nth-last-child(1),
+.outcoming-message:nth-last-child(1) {
+  margin-bottom: 63px;
+}
+
 .chats-body {
   padding: 0;
   margin-top: 0;
@@ -38,6 +43,10 @@
   min-height: 100vh;
 }
 
+.chat .message__author {
+  margin-left: 10px;
+}
+
 .chat .chat__messages_main {
   margin: 0px 15px;
 }
@@ -54,31 +63,35 @@
 .chat .message__content {
   display: flex;
   flex-direction: column;
-  margin: 10px;
 }
 
 .incoming-message .message__bubble {
   margin-top: 8px;
-  padding: 8px 5px;
+  margin-left: 12px;
+  margin-right: 6px;
+  padding: 8px 11px;
   border: 1px solid #f1f1f1;
   background-color: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
 }
 
 .outcoming-message .message__bubble {
   margin-top: 5px;
-  padding: 8px 5px;
+  margin-left: 6px;
+  padding: 8px 11px;
   border: 1px solid #ffeb34;
   background-color: #ffeb34;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
 }
 
 .incoming-message .message__timestamp,
 .outcoming-message .message__timestamp {
   display: flex;
   align-items: flex-end;
-  opacity: 0.6;
-  font-size: 14px;
+  color: #7f7f7f;
+  font-size: 12px;
 }
 
 .chat__messages .chat__timestamp {
@@ -114,31 +127,27 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fcfcfc;
-  padding: 0px 20px;
+  padding: 0px 10px;
   /* box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025); */
+}
+
+.chat__write--container .bottom-arrow {
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  color: #dddddd;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .chat__write {
   bottom: 0;
   width: 100%;
   border-radius: 0;
-  padding: 20px 60px;
+  padding: 15px 50px 15px 30px;
   border: none;
   font-size: 14px;
-}
-
-.chat__write:focus {
-  outline: none;
-}
-
-.chat__write i {
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.chat__write-column:nth-child(2) {
-  width: 70%;
 }
 
 .chat__write--container .chat__icon-left {
@@ -147,5 +156,18 @@
 
 .chat__write--container .chat__icon-right {
   position: absolute;
-  right: 0px;
+  right: 10px;
+}
+
+.chat__write:focus {
+  outline: none;
+}
+
+.chat__write--container .chat__icon {
+  font-size: 22px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
 }
