@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/823dcfd0d9.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/chat2.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
   <body class="chats-body">
@@ -31,7 +31,9 @@
         <a href="index.html" class="header__back-btn">
           <i class="fas fa-arrow-left fa"></i>
         </a>
-        <h1 class="header__title">Nico</h1>
+        <h1 class="header__title">
+            (Unknown)
+        </h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
@@ -50,12 +52,12 @@
         <div class="chat__messages_main">
           <li class="incoming-message message">
             <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
+              src="images/avatar-basic.jpg"
+              class="friend__avatar message__avatar inmessage__avatar"
             />
             <div class="message__content">
               <span class="message__author">
-                Nico
+                    (Unknown)
               </span>
               <span class="message__bubble">
                 Hello, Welcome to<br />
@@ -66,25 +68,24 @@
               13:53
             </span>
           </li>
-          <li class="outcoming-message message">
+          <li class="sent-message message">
             <span class="message__timestamp">
               13:53
             </span>
             <div class="message__content">
               <span class="message__bubble">
-                Thank you, Nico<br />
-                I'll do my best!
+                Thank you
               </span>
             </div>
           </li>
           <li class="incoming-message message">
             <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
+              src="images/avatar-basic.jpg"
+              class="friend__avatar message__avatar inmessage__avatar"
             />
             <div class="message__content">
               <span class="message__author">
-                Nico
+                    (Unknown)
               </span>
               <span class="message__bubble">
                 Good Job!
@@ -94,7 +95,7 @@
               13:53
             </span>
           </li>
-          <li class="outcoming-message message">
+          <li class="sent-message message">
             <span class="message__timestamp">
               13:53
             </span>
@@ -106,12 +107,12 @@
           </li>
           <li class="incoming-message message">
             <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
+              src="images/avatar-basic.jpg"
+              class="friend__avatar message__avatar inmessage__avatar"
             />
             <div class="message__content">
               <span class="message__author">
-                Nico
+                    (Unknown)
               </span>
               <span class="message__bubble">
                 2
@@ -121,7 +122,7 @@
               13:53
             </span>
           </li>
-          <li class="outcoming-message message">
+          <li class="sent-message message">
             <span class="message__timestamp">
               13:53
             </span>
@@ -133,12 +134,12 @@
           </li>
           <li class="incoming-message message">
             <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
+              src="images/avatar-basic.jpg"
+              class="friend__avatar message__avatar inmessage__avatar"
             />
             <div class="message__content">
               <span class="message__author">
-                Nico
+                    (Unknown)
               </span>
               <span class="message__bubble">
                 4
@@ -148,7 +149,7 @@
               13:53
             </span>
           </li>
-          <li class="outcoming-message message">
+          <li class="sent-message message">
             <span class="message__timestamp">
               13:53
             </span>
@@ -157,116 +158,43 @@
                 5
               </span>
             </div>
-          </li>
-          <li class="incoming-message message">
-            <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
-            />
-            <div class="message__content">
-              <span class="message__author">
-                Nico
-              </span>
-              <span class="message__bubble">
-                6
-              </span>
-            </div>
-            <span class="message__timestamp">
-              13:53
-            </span>
-          </li>
-          <li class="outcoming-message message">
-            <span class="message__timestamp">
-              13:53
-            </span>
-            <div class="message__content">
-              <span class="message__bubble">
-                7
-              </span>
-            </div>
-          </li>
-          <li class="incoming-message message">
-            <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
-            />
-            <div class="message__content">
-              <span class="message__author">
-                Nico
-              </span>
-              <span class="message__bubble">
-                8
-              </span>
-            </div>
-            <span class="message__timestamp">
-              13:53
-            </span>
-          </li>
-          <li class="outcoming-message message">
-            <span class="message__timestamp">
-              13:53
-            </span>
-            <div class="message__content">
-              <span class="message__bubble">
-                9
-              </span>
-            </div>
-          </li>
-          <li class="incoming-message message">
-            <img
-              src="images/avatar-nico.jpg"
-              class="friend__avatar message__avatar"
-            />
-            <div class="message__content">
-              <span class="message__author">
-                Nico
-              </span>
-              <span class="message__bubble">
-                End!
-              </span>
-            </div>
-            <span class="message__timestamp">
-              13:53
-            </span>
-          </li>
+          </li>          
         </div>
       </ul>
     </main>
+
     <p id="bottom"></p>
 
     <div class="chat__write--container">
       <input
         type="text"
-        class="chat__write"
         placeholder="Send message"
-        class="chat__write-input"
+        class="chat__write-input chat__write"
       />
 
-      <div class="chat__icon-left chat__icon">
-        <span class="chat__write-icon">
-          <i class="far fa-plus-square"></i>
-        </span>
-      </div>
-
-      <div class="bottom-arrow">
-        <a href="chat2.html#bottom">
+      <div class="bottom-arrow chat__icon">
+        <a href="chat3.html#bottom">
           <i class="fas fa-sort-down"></i>
         </a>
       </div>
 
-      <div class="chat__icon-right chat__icon">
-        <span class="chat__write-icon">
-          <i class="far fa-smile-wink"></i>
+      <div class="chat__icon-left chat__icon">
+        <span>
+          <i class="far fa-plus-square"></i>
         </span>
-        <span class="chat__write-icon">
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span>
+          <i class="far fa-smile"></i>
+        </span>
+        <span">
           <i class="fas fa-microphone"></i>
         </span>
       </div>
     </div>
-
     <div class="bigScreen">
       <span class="bigScreen__text">
-        Please make your screen small!😱
+        Please make your screen small!
       </span>
     </div>
   </body>
